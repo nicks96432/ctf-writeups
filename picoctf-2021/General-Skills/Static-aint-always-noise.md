@@ -1,6 +1,6 @@
 先下載檔案
 
-```console
+```bash
 wget -q https://mercury.picoctf.net/static/bc72945175d643626d6ea9a689672dbd/static
 wget -q https://mercury.picoctf.net/static/bc72945175d643626d6ea9a689672dbd/ltdis.sh
 ```

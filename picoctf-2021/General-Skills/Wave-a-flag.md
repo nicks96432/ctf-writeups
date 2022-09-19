@@ -87,7 +87,7 @@ Contents of section .rodata:
 或者更硬核點，用`gdb`找到字串的位置再印出來
 
 ```console
-gdb -q warm
+$ gdb -q warm
 GEF for linux ready, type `gef' to start, `gef config' to configure
 90 commands loaded and 5 functions added for GDB 12.1 in 1.78ms using Python engine 3.10
 Reading symbols from warm...
@@ -129,7 +129,7 @@ End of assembler dump.
 
 可以看出目標字串在`0x810`，用`x/s`指令印出來
 
-```console
+```gdb
 gef➤  x/s 0x810
 0x810:  "Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1ts_4nd_gr4vy_755f3544}"
 ```

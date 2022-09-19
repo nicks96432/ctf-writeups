@@ -1,6 +1,6 @@
 首先連線到指定的container
 
-```console
+```bash
 ssh ctf-player@venus.picoctf.net -p 56962
 ```
 

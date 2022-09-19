@@ -1,4 +1,4 @@
-```console
+```bash
 nc mercury.picoctf.net 43239 > flag.txt
 ```
 
