@@ -1,4 +1,4 @@
-```shell
+```console
 nc mercury.picoctf.net 43239 > flag.txt
 ```
 
@@ -15,7 +15,7 @@ with open("flag.txt", "r", encoding="utf-8") as f:
 
 可以得到flag
 
-```shell
+```console
 $ python3 decode.py
 picoCTF{g00d_k1tty!_n1c3_k1tty!_7c0821f5}
 ```

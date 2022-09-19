@@ -1,13 +1,13 @@
 先下載檔案
 
-```shell
+```console
 wget -q https://mercury.picoctf.net/static/bc72945175d643626d6ea9a689672dbd/static
 wget -q https://mercury.picoctf.net/static/bc72945175d643626d6ea9a689672dbd/ltdis.sh
 ```
 
 用題目提供的script反組譯就可以得到flag
 
-```shell
+```console
 $ bash ./ltdis.sh static
 Attempting disassembly of ./static ...
 Disassembly successful! Available at: ./static.ltdis.x86_64.txt

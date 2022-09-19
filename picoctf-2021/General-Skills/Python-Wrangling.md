@@ -1,6 +1,6 @@
 下載三個檔案之後按照說明解碼即可得到flag
 
-```shell
+```console
 $ wget -q https://mercury.picoctf.net/static/8e33ede04d02f3765b8c6a6e24d72733/ende.key
 $ wget -q https://mercury.picoctf.net/static/8e33ede04d02f3765b8c6a6e24d72733/pw.txt
 $ wget -q https://mercury.picoctf.net/static/8e33ede04d02f3765b8c6a6e24d72733/flag.txt.en

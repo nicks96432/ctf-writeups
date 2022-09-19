@@ -1,6 +1,6 @@
 下載檔案後執行`warm -h`即可得到flag
 
-```shell
+```console
 $ wget -q https://mercury.picoctf.net/static/a14be2648c73e3cda5fc8490a2f476af/warm
 $ file warm
 warm: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=3181a501366281ab5eba1c41e54a1f40800e3966, with debug_info, not stripped
@@ -13,14 +13,14 @@ Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1
 
 或者也可以用 `strings` 命令来查看執行檔中的字串
 
-```shell
+```console
 $ strings warm | grep picoCTF
 picoCTF{b1scu1ts_4nd_gr4vy_755f3544}
 ```
 
 或者用`xxd`指令來查看執行檔的內容
 
-```shell
+```console
 $ xxd warm | grep -C 3 picoCTF
 00000820: 616c 6c79 2064 6f6e 2774 2064 6f20 6d75  ally don't do mu
 00000830: 6368 2c20 6275 7420 4920 646f 2068 6176  ch, but I do hav
@@ -35,7 +35,7 @@ $ xxd warm | grep -C 3 picoCTF
 
 或者用`hexdump`也可以做到相同的事
 
-```shell
+```console
 $ hexdump -C warm | grep -C 3 picoCTF
 00000820  61 6c 6c 79 20 64 6f 6e  27 74 20 64 6f 20 6d 75  |ally don't do mu|
 00000830  63 68 2c 20 62 75 74 20  49 20 64 6f 20 68 61 76  |ch, but I do hav|
@@ -50,7 +50,7 @@ $ hexdump -C warm | grep -C 3 picoCTF
 
 或者直接用`grep`指令
 
-```shell
+```console
 $ grep -a picoCTF warm
 ]��f.�]�@f.�H�=� H��t    H�5�    UH)�H��H��H��H��?H�H��tH��      H��t
                                                                      ]��f�]�@f.��=y      u/H�=W  UH��t
@@ -61,7 +61,7 @@ $ grep -a picoCTF warm
 
 或者用`objdump`指令
 
-```shell
+```console
 $ objdump -M intel -s -j .rodata warm
 
 warm:     file format elf64-x86-64
@@ -86,7 +86,7 @@ Contents of section .rodata:
 
 或者更硬核點，用`gdb`找到字串的位置再印出來
 
-```shell
+```console
 gdb -q warm
 GEF for linux ready, type `gef' to start, `gef config' to configure
 90 commands loaded and 5 functions added for GDB 12.1 in 1.78ms using Python engine 3.10
@@ -129,7 +129,7 @@ End of assembler dump.
 
 可以看出目標字串在`0x810`，用`x/s`指令印出來
 
-```shell
+```console
 gef➤  x/s 0x810
 0x810:  "Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1ts_4nd_gr4vy_755f3544}"
 ```

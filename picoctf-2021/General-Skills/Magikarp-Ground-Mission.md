@@ -1,12 +1,12 @@
 首先連線到指定的container
 
-```shell
+```console
 ssh ctf-player@venus.picoctf.net -p 56962
 ```
 
 稍微勘查一下地形，會發現兩個檔案
 
-```shell
+```console
 $ ls
 1of3.flag.txt  instructions-to-2of3.txt
 $ cat 1of3.flag.txt
@@ -17,7 +17,7 @@ Next, go to the root of all things, more succinctly `/`
 
 照著指示去`/`，會發現又有兩個檔案
 
-```shell
+```console
 $ cd /
 $ ls
 2of3.flag.txt  boot  etc   instructions-to-3of3.txt  lib64  mnt  proc  run   srv  tmp  var
@@ -30,7 +30,7 @@ Lastly, ctf-player, go home... more succinctly `~`
 
 再次照者指示去`~`，會發現flag最後一部分，那個drop-in是最一開始在的資料夾
 
-```shell
+```console
 $ cd
 $ ls
 3of3.flag.txt  drop-in
