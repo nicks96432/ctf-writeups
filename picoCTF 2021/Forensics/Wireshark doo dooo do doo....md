@@ -15,7 +15,7 @@ shark1.pcapng: pcapng capture file - version 1.0
 用follow TCP stream (Analyze > Follow > TCP Stream)，可以找到在stream 5有一個特別的封包，
 它的body包含一個看起來像flag形狀的東西。
 
-![screenshot](./Wireshark%20doo%20dooo%20do%20doo....png)
+![screenshot](./Wireshark%20doo%20dooo%20do%20doo....webp)
 
 有點像rot13，用[Mod 26](../Cryptography/Mod%2026.md)裡的`rot13.py`試試，結果就能得到flag
 
