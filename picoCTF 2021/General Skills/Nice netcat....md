@@ -1,3 +1,7 @@
+# Nice netcat...
+
+[題目連結](https://play.picoctf.org/practice/challenge/156)
+
 ```bash
 nc mercury.picoctf.net 43239 > flag.txt
 ```
