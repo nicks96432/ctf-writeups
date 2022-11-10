@@ -2,7 +2,7 @@
 
 [題目連結](https://play.picoctf.org/practice/challenge/158)
 
-這題因為key只有16種的關係，就每個都試一次然後照著原來的code反著做就行了。
+這題因為key只有16種的關係，就每個都試一次然後照著原來的code反著做就行了。  
 輸出的第一個字串長得比較像flag，所以就先試它，沒想到就成功了。
 
 ```python
