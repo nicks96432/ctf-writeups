@@ -15,7 +15,7 @@ shark2.pcapng: pcapng capture file - version 1.0
 
 不過在DNS的部份看到可疑的地方，這些query的域名開頭就像是base64
 
-![screenshot](Wireshark%20twoo%20twooo%20two%20twoo....webp)
+![screenshot](../assets/Wireshark%20twoo%20twooo%20two%20twoo....webp)
 
 用`File > Export Packet Dissections > As Plain Text...`輸出封包，不要勾Packet details和
 Include column headings，然後再用`sed`處理，把base64字串組合在一起。

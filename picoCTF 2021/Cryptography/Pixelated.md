@@ -13,6 +13,5 @@ img2 = cv2.imread("scrambled2.png")
 cv2.imwrite("Pixelated.webp", img1 + img2)
 ```
 
-![Pixelated](Pixelated.webp)
-
+![Pixelated](../assets/Pixelated.webp)  
 (版權為原作者所有)

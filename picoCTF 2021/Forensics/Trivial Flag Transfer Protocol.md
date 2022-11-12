@@ -12,7 +12,7 @@ tftp.pcapng: pcapng capture file - version 1.0
 
 用wireshark打開來看，都是TFTP在傳檔案，先用`File > Export Objects > TFTP...`把所有檔案載下來，如圖所示
 
-![screenshot](Trivial%20Flag%20Transfer%20Protocol.webp)
+![screenshot](../assets/Trivial%20Flag%20Transfer%20Protocol.webp)
 
 其中`instructions.txt`和`plan`都是看起來沒意義的大寫字母字串，先放著。
 三張風景圖片也都看不出有flag的地方，不過最後的program.deb裡面放的是一個叫steghide的程式，
