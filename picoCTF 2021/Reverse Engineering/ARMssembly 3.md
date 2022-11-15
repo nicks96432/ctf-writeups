@@ -2,7 +2,7 @@
 
 [題目連結](https://play.picoctf.org/practice/challenge/106)
 
-一樣編譯好丟IDA pro，出來的結果長這樣：
+一樣用`aarch64-linux-gnu-gcc`編譯好丟IDA pro，出來的結果長這樣：
 
 ```c
 #include <stdio.h>

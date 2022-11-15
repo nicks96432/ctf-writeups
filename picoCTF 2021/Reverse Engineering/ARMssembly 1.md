@@ -2,7 +2,7 @@
 
 [題目連結](https://play.picoctf.org/practice/challenge/111)
 
-一樣懶得看組語:Pepega:，用`aarch64-linux-gnu-as`變成執行檔丟到IDA pro反編譯，
+一樣懶得看組語:Pepega:，用`aarch64-linux-gnu-gcc`變成執行檔丟到IDA pro反編譯，
 沒想到IDA聰明到可以化簡func裡面在做的事：
 
 ```c

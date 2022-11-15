@@ -2,7 +2,7 @@
 
 [題目連結](https://play.picoctf.org/practice/challenge/160)
 
-這題的檔案是arm的組語，我懶得看組語:Pepega:，所以用`aarch64-linux-gnu-as`
+這題的檔案是arm的組語，我懶得看組語:Pepega:，所以用`aarch64-linux-gnu-gcc`
 變成執行檔丟到IDA pro反編譯，整個程式其實很短：
 
 ```c

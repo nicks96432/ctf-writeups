@@ -2,7 +2,7 @@
 
 [題目連結](https://play.picoctf.org/practice/challenge/150)
 
-反正我就是不想看組語:Pepega:，一樣用`aarch64-linux-gnu-as`變成執行檔丟到IDA pro反編譯，
+反正我就是不想看組語:Pepega:，一樣用`aarch64-linux-gnu-gcc`變成執行檔丟到IDA pro反編譯，
 出來的結果長這樣：
 
 ```c
